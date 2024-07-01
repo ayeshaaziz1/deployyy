@@ -1,0 +1,243 @@
+*{
+    padding: 0px;
+    margin:0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins",sans-serif;
+}
+nav h1{
+   font-size: 40px;
+   line-height: 80px;
+   padding:0px 80px;
+   font-weight: bold;
+   display: inline;
+}
+nav ul{
+    float: right;
+    margin-right:20px ;
+}
+nav ul li{
+    display:inline-block;
+    margin: 0px 50px;
+    line-height: 80px;
+}
+nav{
+   
+    background: linear-gradient(to bottom right,rgb(129, 56, 129),rgb(241, 174, 234) );
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+a:hover{
+    color: #0f0e17;
+    transition: 0.5s;
+}
+.toggle{
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+#home{
+    background-color: #0f0e17;
+    max-width: 100%;
+    height: 100vh;
+}
+.aboutme{
+    background-color: rgb(246, 189, 235);
+    max-width: 100%;
+    height: 100vh;
+}
+#skills{
+    background-color: #0f0e17;
+    max-width: 100%;
+    height: 100vh;
+}
+.project{
+    background-color: rgb(246, 189, 235);
+    max-width: 100%;
+    height: 80vh;
+}
+.contact{
+    background-color: #0f0e17;
+    max-width: 100%;
+    height: 35vh;
+}
+.homecontent{
+    position:absolute;
+    top: 200px;
+}
+.homeleft{
+    color: white;
+}
+.icons i{
+    border: 2px solid white;
+    font-size: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+}
+.icons i:hover{
+    background-color: rgb(241, 174, 234);
+}
+.coloured{
+    color:rgb(241, 174, 234) ;
+}
+.webdevbr{
+    display: none;
+}
+.homeright img{
+    width: 370px;
+    height: auto;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    left: 280px;
+}
+.homecontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: centre;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+    left: 150px;
+}
+.homeleft h3{
+    font-size: 28px;
+}
+.webdev{
+    font-size: 25px;
+    letter-spacing: 0.5px;
+}
+.homeleft button{
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgb(241, 174, 234);
+    position: relative;
+    margin-bottom: 20px;
+}
+.homeleft button a{
+    color: white;
+    font-size: 20px;
+}
+.aboutme h1{
+    color: white;
+    position: relative;
+    top:70px;
+    left:50px;
+    font-size: 50px;
+}
+.aboutmecontent img{
+    width: 350px;
+    border-radius: 50%;
+    position: relative;
+    top: 70px;
+    left: 10px;
+    border: 15px solid rgb(123, 86, 115);
+}
+.aboutmecontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+.aboutmecontent p{
+    font-size: 20px;
+    font-weight: 550px;
+    position: relative;
+    left: 50px;
+    width: 900px;
+    color: rgb(56, 13, 48);
+    top: 70px;
+}
+
+/* .box{
+    display: inline-block;
+    margin: 70px;
+} */
+#skills>h1{
+    position: relative;
+    top: 80px;
+    left: 80px;
+    font-size: 50px;
+    color: white;
+}
+.box img{
+    font-size: 10px;
+    height: 100px;
+    
+} 
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(89, 42, 123);
+    border-radius: 10px;
+    box-shadow: 15px 15px 5px black;
+}
+.boxcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 180px;
+}
+.box img{
+    align-self: centre;
+    position: relative;
+    top: 25px;
+    left: 50px;
+}
+.box h1{
+    color: rgb(241, 174, 234);
+    padding-top: 30px;
+    padding-left: 65px;
+}
+@media(max-width:700px){
+    .toggle{
+        display: block;
+    }
+    nav ul li{
+        display:block ;
+    }
+    ul{
+        position: static;
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(to bottom right,rgb(129, 56, 129),rgb(241, 174, 234) );
+        text-align: center;
+        z-index: 100;
+        display: none;
+    }
+    #check:checked~ul{
+        display: block;
+    }
+    nav ul li{
+        margin-bottom: 10px;
+    }
+    nav{
+        position: static;
+    }
+
+}
